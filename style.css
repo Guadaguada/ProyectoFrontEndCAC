@@ -1,5 +1,15 @@
-nav{
+:root {
+    margin: 10px;
+    text-align:center;
+} 
+nav {
     color:black;
-    background-color: blueviolet;
+    background-color: #FFD1BF;
+    text-align:right;
+
+}
+
+#aside {
+    text-align: left;
 
 }
