@@ -15,13 +15,27 @@ nav {
     padding: 50px;
 }
 
-#buscador {
+.buscador {
     padding:10px;
     text-align: left;
     border: solid;
     border-color: burlywood;
     border-radius: 15px;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.opiniones{
+    display:flex;
+    justify-content: center;
+    
+}
+
 
 a:link {
     color: rgb(57,106,177);
@@ -39,8 +53,3 @@ a:active {
     color:rgb(33,164,143);
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-
-}
