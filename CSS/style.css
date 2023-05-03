@@ -1,0 +1,138 @@
+:root {
+    margin: 10px;
+    text-align:center;
+ } 
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.carousel {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.carousel-item.active {
+    opacity: 1;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-control-next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.carousel-control-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+.carousel-control-prev .carousel-control-icon {
+    transform: rotate(180deg);
+}
+
+/*CONTACTOS*/
+
+#presentacion {
+    background-color:aliceblue; /* Poner imagen de fondo de montaña o lo que sea */
+    padding: 30px;
+    
+
+    
+}
+
+.buscador {
+    padding: 8px;
+    font-size: 1em;
+    text-align: center;
+    border: solid;
+    border-color: burlywood;
+    border-radius: 15px;
+    font-family: 'Patrick Hand', cursive; /*amigable pero no tanta lectura*/
+}
+
+.contenido {
+    padding-top: 10px;
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+/*main {
+    display: grid;
+    padding: 8px;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Comfortaa', cursive; //para más texto 
+
+}*/
+
+.opiniones{
+    display:flex;
+    justify-content: center;
+    
+}
+
+#opinion {
+    font-family: 'Indie Flower', cursive; /* para comentarios, opiniones*/
+}
+
+
+a:link {
+    color: rgb(57,106,177);
+}
+
+a:visited {
+    color: rgb(236,97,159)
+}
+
+a:hover{ 
+    color: rgb(119,200,208)
+}
+
+a:active {
+    color:rgb(33,164,143);
+}
+
+
+
