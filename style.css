@@ -3,6 +3,7 @@
     text-align:center;
     font-family: "Anton-Regular";
 } 
+
 nav {
     padding: 8px;
     background-color: rgb(252,243,185);
@@ -11,9 +12,23 @@ nav {
     font-family: 'Patrick Hand', cursive; /* amigable pero no tanta lectura*/
 }
 
+body {
+    background-color: antiquewhite;
+
+}
+
+main {
+    background-color: beige;
+    display: inline-flex;
+    padding: 8px; 
+    font-family: 'Comfortaa', cursive; /* para más texto */
+
+}
 #presentacion {
     background-color:aliceblue; /* Poner imagen de fondo de montaña o lo que sea */
-    padding: 50px;
+    padding: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
 }
 
 .buscador {
@@ -28,26 +43,6 @@ nav {
 
 .contenido {
     padding: 10px;
-}
-
-header {
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-}
-
-main {
-    display: grid;
-    padding: 8px;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    font-family: 'Comfortaa', cursive; /* para más texto */
-
-}
-
-.opiniones{
-    display:flex;
-    justify-content: center;
-    
 }
 
 #opinion {
@@ -73,5 +68,5 @@ a:active {
 
 
 
-font-family: 'Oswald', sans-serif;
+/* font-family: 'Oswald', sans-serif; */
 
