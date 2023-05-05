@@ -1,3 +1,5 @@
+//CAROOUSEL
+
 (function(){
 let carouselItems = document.querySelectorAll(".carousel-item");
 let carouselControls = document.querySelectorAll(".carousel-control");

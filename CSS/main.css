@@ -1,3 +1,7 @@
+:root {
+  margin: 10px;
+  text-align:center;
+} 
 /* Estilos Iniciar Sesion */
 .form-container {
     max-width: 500px;
@@ -52,11 +56,11 @@
     margin-bottom: 2rem;
   }
 
-  /* tarjetas Alquiler*/
+  /* TARJETA ALQUILER */
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
   
@@ -74,41 +78,23 @@
   .card img {
     width: 100%;
     height: auto;
+    position: relative;
+  }
+  
+  .card-image {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
   }
 
-  /* CARD HOME */
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-  }
   
-  .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    border-radius: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-  }
-  
-  .red {
-    background-color: aliceblue;
-  }
-  
-  .green {
-    background-color: aliceblue;
-  }
-  
-  .blue {
-    background-color: aliceblue;
-  }
    
   
 

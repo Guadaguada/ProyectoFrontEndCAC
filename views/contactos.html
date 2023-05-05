@@ -9,12 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
-    <link rel="stylesheet" type="text/css" href="/CSS/contacto.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/contacto.css">
 
     <script type="text/javascript" src="../JS/nav.js" fade></script>
-    <script type="text/javascript" src="../JS/script.js" fade></script>
+    <script type="text/javascript" src="../JS/contacto.js" fade></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     
@@ -24,68 +23,69 @@
 
 <body>
 
-    
-    
-    <!-- Navbar -->
     <nav class="menu">
         <section class="menu__container">
             <h1 class="menu__logo">Travellers</h1>
         
         <ul class="menu__links">
             <li class="menu__item">
-                <a href="../views/home.html" class="menu__link">Home</a>
+                <a href="../index.html" class="menu__link">Home</a>
             </li>
             <li class="menu__item menu__item--show">
                <a href="#" class="menu__link">Servicios<img src="../assets/arrow.svg" class="menu__arrow"></a>
 
                <ul class="menu__nesting menu__nesting--visible">
                 <li class="menu__inside">
-                    <a href="../views/Servicios/Destino.html" class="menu__link menu__link--inside">Destino</a>
+                    <a href="./Destino.html" class="menu__link menu__link--inside">Destino</a>
                 </li>
                 <li class="menu__inside">
-                    <a href="../views/Servicios/Alquileres.html" class="menu__link menu__link--inside">Alquileres</a>
+                    <a href="./Alquileres.html" class="menu__link menu__link--inside">Alquileres</a>
                 </li>
                 <li class="menu__inside">
-                    <a href="../views/Servicios/Transportes.html" class="menu__link menu__link--inside">Transportes</a>
+                    <a href="./Transportes.html" class="menu__link menu__link--inside">Transportes</a>
                 </li>
                </ul>
             </li>
             <li class="menu__item active" aria-current="page">
-               <a id="destinos-menu" href=" " class="menu__link">Contacto</a>
+               <a id="destinos-menu" href="" class="menu__link">Contacto</a>
             </li>
             <li class="menu__item">
-               <a href="../views/Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
+               <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
             </li>
         </ul>
         <div class="menu__hamburguer">
             <img src="../assets/menu.svg" class="menu__img">
 
         </div>
-    </section>
+      </section>
 
     </nav>
-</header>
-       <main>
-            <form action="procesar.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br>
+
+     <main>
+        <div id="presentacion">
+            <h1>Contacto</h1>
+            <form id="registro-form">
+                <label for="nombre">Nombre *</label>
+                <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
               
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono"><br>
+                <label for="apellido">Apellido *</label>
+                <input type="text" placeholder="Apellido" id="apellido" name="apellido" required>
               
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email"><br>
+                <label for="email">Correo electrónico *</label>
+                <input type="email" placeholder="Example@.com" id="email" name="email" required>
               
-                <label for="tarjeta">Número de tarjeta de crédito:</label>
-                <input type="text" id="tarjeta" name="tarjeta"><br>
+                <label for="residencia">Lugar de residencia</label>
+                <input type="text" id="residencia" name="residencia">
               
-                <label for="monto">Monto:</label>
-                <input type="number" id="monto" name="monto" min="0" step="0.01"><br>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="(min 10)" name="telefono" pattern="[0-9]">
+                <div>
+                    <button type="submit" id="enviar-btn">Registrarse</button>
+                </div>
               
-                <input type="submit" value="Enviar">
+                
               </form>
               
-        </div> 
             
 
            
@@ -99,12 +99,8 @@
     </footer>
    
     <script type="text/javascript" src="../JS/nav.js"></script>
-    <script type="text/javascript" src="../JS/script.js"></script>
-    <script type="text/javascript" src="./Servicios/contacto.js"></script>
-
-
-
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../JS/contacto.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+:root {
+  margin: 10px;
+  text-align:center;
+} 
 *{
   margin: 0;
   padding: 0;
@@ -14,8 +18,6 @@ body{
   color: yellow;
   height: 70px;
   
-
-
 }
 .menu__container{
   display: flex;
@@ -106,7 +108,7 @@ body{
     width: 36px;
   }
 
-Media queries 
+/*Media queries 
 
   @media (max-width:800px){
      .menu__hamburguer{
@@ -167,6 +169,68 @@ Media queries
       margin-left: auto;
       border-left: 1px solid #798499;
     }
-}
+}*/
       
- 
+#presentacion {
+  background-color:aliceblue; /* Poner imagen de fondo de montaña o lo que sea */
+  padding: 30px;
+  text-align: center;
+  
+}
+
+.buscador {
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+  border: solid;
+  border-color: burlywood;
+  border-radius: 15px;
+  font-family: 'Patrick Hand', cursive; /*amigable pero no tanta lectura*/
+}
+
+.contenido {
+  padding-top: 10px;
+}
+
+header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+/*main {
+  display: grid;
+  padding: 8px;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-family: 'Comfortaa', cursive; //para más texto 
+
+}*/
+
+.opiniones{
+  display:flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  
+}
+
+#opinion {
+  font-family: 'Indie Flower', cursive; /* para comentarios, opiniones*/
+}
+
+
+a:link {
+  color: rgb(57,106,177);
+}
+
+a:visited {
+  color: rgb(236,97,159)
+}
+
+a:hover{ 
+  color: rgb(119,200,208)
+}
+
+a:active {
+  color:rgb(33,164,143);
+}
