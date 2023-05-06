@@ -2,6 +2,14 @@
   margin: 10px;
   text-align:center;
 } 
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Sigmar&display=swap');     
+.presentacion {
+  padding: 30px;
+  text-align: center;
+  font-family: 'Sigmar', cursive;
+}
+
 /* Estilos Iniciar Sesion */
 .form-container {
     max-width: 500px;
@@ -96,7 +104,8 @@
 
   
    
-  
+
+
 
  
 
