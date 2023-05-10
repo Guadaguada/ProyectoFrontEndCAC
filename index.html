@@ -8,9 +8,13 @@
     <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Sigmar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/carrousel.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main.css">
+
     <title>Travellers</title>
     <script type="text/javascript" src="./JS/nav.js" defer></script>
     <script type="text/javascript" src="./JS/script.js" defer></script>
@@ -34,7 +38,7 @@
                     <a href="views/Destino.html" class="menu__link menu__link--inside">Destino</a>
                 </li>
                 <li class="menu__inside">
-                    <a href="views/Alquileres.html" class="menu__link menu__link--inside">Alquileres</a>
+                    <a href="views/Alojamiento.html" class="menu__link menu__link--inside">Alojamiento</a>
                 </li>
                 <li class="menu__inside">
                     <a href="views/Transportes.html" class="menu__link menu__link--inside">Transportes</a>
@@ -51,70 +55,84 @@
         <div class="menu__hamburguer">
             <img src="./assets/menu.svg" class="menu__img">
        </div>
-    </section>
-</nav>
+        </section>
+    </nav>
 
-       <div id="presentacion">
-            <h1>Bienvenidos a Travellers</h1>
+   <!-----------------------HEADER------------------------> 
+    <header>
+        <div class="presentacion">
+            <h1>Bienvenidos a TRAVELLERS!</h1>
+            <h3>Tu próxima aventura comienza acá</h3>
         </div> 
-            <!-- carrousel con imegenes-->
-            
-<div class="carousel">
-	<div class="carousel-inner">
-		<div class="carousel-item active carousel-slide active">
-			<img src="./img/puerto-madero.webp" alt="Imagen 1" width="90%" height="500">
-		</div>
-		<div class="carousel-item carousel-slide">
-			<img src="./img/Calafate.png" alt="Imagen 2" width="90%" height="500">
-		</div>
-		<div class="carousel-item carousel-slide">
-			<img src="./img/paul-lucyk-CcJiAGg8pTA-unsplash (1).jpg" alt="Imagen 3" width="90%" height="500">
-		</div>
-    <div class="carousel-item carousel-slide">
-			<img src="./img/nadine-marfurt-xFFdn-n5Y9I-unsplash.jpg" alt="Imagen 3" width="90%" height="500">
-		</div>
-    <div class="carousel-item carousel-slide">
-			<img src="./img/roi-dimor-wpje5hMfJj0-unsplash.jpg" alt="Imagen 3" width="90%" height="500">
-		</div>
-	</div>
-	<a class="carousel-control carousel-control-prev" href="#" role="button">
-		<span class="carousel-control-icon"></span>
-	</a>
-	<a class="carousel-control carousel-control-next" href="#" role="button">
-		<span class="carousel-control-icon"></span>
-	</a>
-</div>
-	</header>
+    </header>
+      
+    <!-------------------------------MAIN-------------------------------------->
     <main>
-        <div class="buscador">
-            <div class="contenido">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia excepturi placeat necessitatibus sit quas alias, magnam est magni aliquid ducimus quod. Itaque nulla voluptatem assumenda. Tenetur numquam porro, 
-            </div>
-        </div>
-    <main>
-        <div class="grid-container">
-            <div class="card green">
-                <a href="./views/Destino.html">Destinos</a>
-                <img src="" alt="">
+        
+        <div class="contenido">
+            <h1>¿Que buscas?</h1>
+            <!-------------------------------CARDS--------------------------------> 
+            <div class="grid-container">
+                <div class="card green">
+                    <img src="img/logo-destino-naranja.jpg" alt="Logo ubicacion naranja">
+                    <a href="./views/Destino.html">Destinos</a>
+                    
                 </div>
+
                 <div class="card red">
-                <a href="./views/Alquileres.html">Alquileres</a>
-                <p></p>
-                <img src="" alt="">
+                    <img src="img/logo-alojamiento-naranja.jpg" alt="">
+                    <a href="./views/Alojamiento.html">Alojamiento</a>
+                    
                 </div>
                 
                 <div class="card blue">
-                <a href="./views/Transportes.html">Como Viajar</a>
-                <img src="" alt="">
+                    <img src="img/logo-auto-naranka.jpg" alt="">
+                    <a href="./views/Transportes.html">Como Viajar</a>
+                    
                 </div>
             </div>
+                
+            <div class="contenido-texto">
+                <h1>¿Qué es Travellers?</h1>
+                <p>Travellers es un proyecto pensado para unir viajeros que tengan como objetivo un mismo destino. Para compartir viaje. Para compartir la experiencia. Para compartir la felicidad. Te invitamos a que te sumas a esta nueva experiencia y a un nuevo modo para conectarte con otros viajeros.</p>
+            </div>
+                <!--------------------------- Carrousel -------------------------------------->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-slide active">
+                        <img src="./img/puerto-madero.webp" alt="Imagen 1" width="90%" height="500">
+                    </div>
+                    <div class="carousel-item carousel-slide">
+                        <img src="./img/Calafate.png" alt="Imagen 2" width="90%" height="500">
+                    </div>
+                    <div class="carousel-item carousel-slide">
+                        <img src="./img/paul-lucyk-CcJiAGg8pTA-unsplash (1).jpg" alt="Imagen 3" width="90%" height="500">
+                    </div>
+                <div class="carousel-item carousel-slide">
+                        <img src="./img/nadine-marfurt-xFFdn-n5Y9I-unsplash.jpg" alt="Imagen 3" width="90%" height="500">
+                    </div>
+                <div class="carousel-item carousel-slide">
+                        <img src="./img/roi-dimor-wpje5hMfJj0-unsplash.jpg" alt="Imagen 3" width="90%" height="500">
+                    </div>
+                </div>
+                <a class="carousel-control carousel-control-prev" href="#" role="button">
+                    <span class="carousel-control-icon"></span>
+                </a>
+                <a class="carousel-control carousel-control-next" href="#" role="button">
+                    <span class="carousel-control-icon"></span>
+                </a>
+            </div>
+        </div>
+        
+        
             
     </main>
+
     <footer>
+
        <i>2023 Travellers, Inc.</i>
        <a href="#">Contacto</a> <!-- Lleva a pag con formulario para contactar  -->
        <a href="#">Sobre Nosotros</a> <!-- Lleva a otra pagina about us -->
-       <a href="https://www.flaticon.com/free-icons/tour" title="tour icons">Tour icons created by Freepik - Flaticon</a><!-- copyright etc --> 
        
     </footer>
         

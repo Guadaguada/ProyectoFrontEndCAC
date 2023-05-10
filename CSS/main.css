@@ -1,5 +1,8 @@
 :root {
-  margin: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
   text-align:center;
 } 
 /* Estilos Iniciar Sesion */
@@ -62,6 +65,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+  
   }
   
   .card {
@@ -94,11 +98,53 @@
     }
   }
 
-  
-   
-  
-
- 
 
   
-  
+
+
+header{
+  height: 280px;
+  background-image: url('../img/header-background1.jpg') ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}
+
+.presentacion {
+  padding: 20px;
+  font-size: 1.75em;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+
+.presentacion h3{
+  color: rgb(236,97,159)
+}
+
+.contenido{
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.contenido-texto p{
+  padding-top: 15px;
+
+
+}
+
+.grid-container{
+  padding: 10px;
+}
+
+footer{
+  margin-top: 15px;
+  padding-top:3px;
+  background-color: rgba(57,106,177,0.90);
+}
+
+.card-alojamiento{
+  padding: 15px;
+}
